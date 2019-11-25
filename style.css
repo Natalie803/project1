@@ -1,0 +1,33 @@
+
+
+h1 {
+	color:red !important;
+}
+	
+p:hover {
+	color:#FFCC99;
+}
+
+div {
+	margin-left:50px;
+	padding-left:100px;
+	background:pink;
+	border: 2px solid red;
+	padding-right:300px;
+}
+
+#t {
+	margin-left:50px;
+	padding-left:100px;
+	background:pink;
+	border: 2px solid red;
+	margin-right:500px;
+}
+
+#t:hover {
+	color: black;
+}
+
+a.try {
+	color:#00CC33;
+}
