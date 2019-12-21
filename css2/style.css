@@ -1,0 +1,105 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 900px; 
+}
+
+
+.header {
+  background-image: url('https://yumchief.com/wp-content/uploads/2018/03/rice-with-red-beans-and-salsa-sauce-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  text-align: center; 
+}
+
+.header p {
+  color: #fff;
+	font-weight: 500;
+	font-size: 90px;
+	letter-spacing: 10px;
+	margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+
+
+
+.middle {
+	border-left: 400px solid #B5E3FF;
+	border-right: 400px solid #FFACAA;
+	position: relative;
+	margin-bottom: 30px;
+	background: #234678;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+.content {
+	padding: 0 20px;
+}
+
+
+.left-sidebar {
+	float: left;
+	width: 333px;
+	position: relative;
+	background: #B5E3FF;
+	left: -333px;
+}
+
+
+
+.right-sidebar {
+	float: right;
+	margin-right: -333px;
+	width: 333px;
+	position: relative;
+	background: #FFACAA;
+}
+
+
+
+
+
+
+.footer {
+  float: left;	
+  background: #9C97E8;
+  width: 100%;
+}
+
+.footer p { 
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+  line-height: 80px;
+  margin: 0;
+}
