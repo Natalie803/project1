@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+		 <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <script>
+            let message = `Здесь написано предложение`;
+            document.write(`${message}<br>`);
+            let countOfSymbols = 0;
+            let countOfWords = 1;
+            for (let i = 0; i < message.length; ++i) {
+                if (message[i] === " ") ++countOfWords;
+                else ++countOfSymbols;
+            }
+            document.write(`symbols: ${countOfSymbols} words: ${countOfWords}<br>`);
+            let url = window.location;
+            document.write(`Full URL: ${url}<br>`);
+            let protokol = url.protocol;
+            let name = "";
+            let type = "";
+            let i = url.pathname.length - 1;
+            while (url.pathname[i] != ".") {
+                type = url.pathname[i] + type;
+                --i;
+            }
+            --i;
+            while (i > 0) {
+                name = url.pathname[i] + name;
+                --i;
+            }
+            document.write(`Protokol: ${protokol}<br>`);
+            document.write(`File name: ${name}<br>`);
+            document.write(`File type: ${type}<br>`);
+        </script>
+        <script>
+            let ancors = `Anchor`;
+            document.write(`Анкор 1: ${`${ancors}1`.anchor(`anc1`)}<br>`);
+            document.write(`Анкор 2: ${`${ancors}2`.anchor(`anc2`)}<br>`);
+            document.write(`<a href="#anc1" id="anc1Link">${ancors}1</a><br>`);
+            document.write(`<a href="#anc2" id="anc2Link">${ancors}2</a><br>`);
+            document.write(`<a href="http://www.ifmo.ru/file/news/4246/itmo_small_blue_rus.jpg">ITMOlogo</a><br>`);
+            document.write(`<a href="https://postupi.online/images/images823/48/305.jpg">ITMOphoto</a><br>`);
+            document.write(`<img id="logo" src="http://www.ifmo.ru/file/news/4246/itmo_small_blue_rus.jpg" height="140px" width="200px"><br>`);
+            document.write(`<img id="photo" src="https://postupi.online/images/images823/48/305.jpg" height="140px" width="250px"><br>`);
+            document.write(`Кол-во анкоров: ${document.anchors.length}<br>`);
+            document.write(`Кол-во ссылок: ${document.links.length}<br>`);
+            document.write(`Содержимое первого: ${document.anchors[0].innerHTML}<br>`);
+            document.write(`Кол-во картинок: ${document.images.length}<br>`);
+            document.write(`Ширина первой картинки: ${document.images[0].width}<br>`);
+            document.write('Ширина самой широкой картинки: ', Math.max.apply(Math, Array.from(document.images).map(function(images){return images.width;})),'<br>');
+			const reducer = (accumulator, currentValue) => accumulator + currentValue;
+			document.write('Сумма всех высот картинок: ',Array.from(document.images).map(function(images){return images.height;}).reduce(reducer),'<br>');
+        </script>
+        <script>
+          for (let i = 0;i<10;i++)
+{
+  document.write('<form name = "formNumber',i,'" id = "',i,'">');
+  document.write('<input type="button" value="Имя формы" onClick="alert(\'Имя формы\')"class = "name"></input>');
+  document.write('<input type="login"></input>');
+  document.write('<input type="button" value="Принадлежность" onClick="alert(',i,')" class = "which"></input>');
+  document.write('<input type="reset" class = "reset"></input>');
+  document.write('<input type="button" value="Показать кол-во полей" onClick="alert(',document.forms[i].childElementCount+1,')" class="show"></input>','</form>');
+}
+
+document.write('Имена всех четных форм: ');
+for (let i = 0;i<10;i++)
+{
+    modYesNO = (i%2==0)?document.write('formNumber',i,', '):0;
+}
+document.write('<br>');
+        </script>
+    </body>
+</html>

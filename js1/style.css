@@ -1,0 +1,51 @@
+.name {
+  background-image: url('icons/d.png');
+  width: 200px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 10px;
+}
+
+.name:hover {
+  background-color:aqua;
+}
+
+.which {
+  background-image: url('icons/a.png');
+  width: 200px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 10px;
+}
+
+.which:hover {
+  background-color:beige;
+}
+
+.reset {
+  background-image: url('icons/b.png');
+  width: 200px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 10px;
+}
+
+.reset:hover{
+  background-color:aquamarine;
+}
+
+.show {
+  background-image: url('icons/c.png');
+  width: 200px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 10px;
+}
+
+.show:hover {
+  background-color: yellow;
+}
